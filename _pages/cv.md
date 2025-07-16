@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "招聘岗位"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -9,56 +9,50 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+## 博士后（常年有效）
+### 岗位要求：
+1. 年龄≤32岁（特别优秀者可适当放宽）；对科学研究有浓厚兴趣和清晰的科研思路，诚实守信，富有责任心和团队意识，拥有良好的沟通能力和团队合作精神。  
+2. 已获得或即将获得生物信息学、计算机、免疫学等相关专业博士学位，有生物信息学和肿瘤免疫研究经验者优先。  
+3. 以第一作者在有影响力的学术期刊发表过SCI论文（不含综述、评论）。  
+4. 具有较高的英语写作能力。能深入阅读本领域英文文献，具备良好的中英文阅读、写作和口头交流能力，能够独立开展科研工作。
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+## 科研助理（1-2名）
+### 岗位要求：
+1. 年龄不限，能够长期稳定工作。  
+2. 已获得或即将获得基础医学或计算生物学相关专业的全日制本科或硕士学历。  
+3. 具有单细胞测序建库，或者有网页制作、服务器管理经验背景者优先。  
+4. 具有责任心、团队合作精神、和良好的沟通协调能力。身心健康，遵守宪法和法律，恪守学术规范，遵守学校和医院的规章制度。
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+## 博士、硕士
+欢迎有意向的考生加入我们生物信息与复杂疾病研究团队，一起通过计算生物学与实验室生物学相结合的方式研究复杂疾病在基础和临床中的前沿问题。对于背景不做限定，有志向在这个领域深耕的考生均欢迎。
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+# 薪酬待遇
+## 博士后
+1. 提供具有竞争力的基础年薪，单位缴纳五险一金。  
+2. 享受各级博士后叠加项目资助。入选国家级或省级博士后人才计划或相关项目，按政策享受国家级省市资助，包括年薪支持、项目经费资助等，相关奖励金额上不封顶。  
+3. 科研经费。根据评议结果提供科研启动经费。  
+4. 项目激励。支持在站博士后积极申报国家级和省级人才项目和科研项目，享受本院职工同等的科研激励。  
+5. 其他待遇。按相关规定，享受医院职工体检、子女入托入学等福利。工作成绩突出者可申请参加学校或医院科研岗位的聘任遴选。
+
+## 科研助理
+1. 薪资待遇面议。  
+2. 享受课题组的科研激励（含SCI文章、国自然项目等）。  
+3. 按相关规定，享受五险一金、职工体检、工会福利等。
+
+
+# 应聘方式
+请应聘者将个人简历（包括教育和科研经历、发表文章、所获奖项和主要科研技能等)和学历、学位证明等支撑材料，以PDF文件格式发送至邮箱hongyiz9@uestc.edu.cn，邮件主题栏内请注明：“姓名+申请职位/博士/硕士+单位”。
+
+
+# 访问学者
+我们鼓励生物信息学/统计学/免疫学或其他相关领域的研究人员与我们联系，以便在我们的实验室进行临时访问和研究。
+
+
+
+
+
+
+
+
+
