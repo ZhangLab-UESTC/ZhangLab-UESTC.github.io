@@ -1,36 +1,130 @@
 ---
 layout: archive
-title: "Publications"
+title: ""
 permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<style>
+    .research-section {
+        margin: 40px 0;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+    }
+    
+    .research-area {
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eaeaea;
+    }
+    
+    .research-area:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+    
+    .research-title {
+        font-size: 1.4rem;
+        color: #2c3e50;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+    
+    .tech-list {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .tech-item {
+        margin-bottom: 8px;
+        position: relative;
+        padding-left: 25px;
+    }
+    
+    .tech-item:before {
+        content: "•";
+        position: absolute;
+        left: 10px;
+        color: #3498db;
+        font-weight: bold;
+    }
+    
+    .research-image-container {
+        margin: 20px auto;
+        text-align: center;
+        max-width: 100%;
+    }
+    
+    .research-image {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+    
+    .research-image:hover {
+        transform: scale(1.02);
+    }
+    
+    .image-caption {
+        margin-top: 8px;
+        font-size: 0.9em;
+        color: #666;
+        font-style: italic;
+    }
+    
+    @media (max-width: 768px) {
+        .research-section {
+            padding: 15px;
+        }
+        
+        .research-title {
+            font-size: 1.2rem;
+        }
+        
+        .research-image {
+            max-width: 100%;
+        }
+    }
+</style>
 
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+<div class="research-section">
+    <div class="research-area">
+        <div class="research-title">🛡️ 适应性免疫系统</div>
+        <div class="tech-list">
+            <div class="tech-item"><strong>技术：</strong>TCR/BCR 测序、深度学习</div>
+            <div class="tech-item"><strong>目标：</strong>抗原特异性免疫应答解析，免疫治疗响应标志物筛选</div>
+        </div>
+        <div class="research-image-container">
+            <img src="../images/免疫系统.jpg" alt="适应性免疫系统研究" class="research-image">
+            <div class="image-caption">TCR/BCR测序数据分析流程</div>
+        </div>
+    </div>
+    
+    <div class="research-area">
+        <div class="research-title">🔬 肿瘤免疫微环境解析</div>
+        <div class="tech-list">
+            <div class="tech-item"><strong>技术：</strong>单细胞 RNA-seq、空间转录组</div>
+            <div class="tech-item"><strong>目标：</strong>揭示免疫细胞动态互作机制，挖掘治疗靶点</div>
+        </div>
+        <div class="research-image-container">
+            <img src="../images/肿瘤微环境.jpg" alt="肿瘤免疫微环境" class="research-image">
+            <div class="image-caption">单细胞测序揭示肿瘤微环境细胞组成</div>
+        </div>
+    </div>
+    
+    <div class="research-area">
+        <div class="research-title">🤖 肿瘤AI诊断算法开发</div>
+        <div class="tech-list">
+            <div class="tech-item"><strong>技术：</strong>深度学习、多组学整合</div>
+            <div class="tech-item"><strong>应用：</strong>早筛模型、疗效预测工具</div>
+        </div>
+        <div class="research-image-container">
+            <img src="../images/AI诊断.jpg" alt="AI诊断算法" class="research-image">
+            <div class="image-caption">深度学习模型架构示意图</div>
+        </div>
+    </div>
+</div>
