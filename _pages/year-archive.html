@@ -1,85 +1,63 @@
 ---
 layout: archive
 permalink: /year-archive/
-title: "欢迎欣赏实验室的精彩瞬间！"
+title: "实验室精彩瞬间"
 author_profile: true
-redirect_from:
-  - /wordpress/blog-posts/
 ---
 
 <style>
-    .gallery-container {
+    .gallery {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 20px;
-        margin-top: 20px;
+        gap: 15px;
+        padding: 20px;
     }
-
-    .photo-card {
-        background: white;
+    .photo {
         border-radius: 8px;
         overflow: hidden;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
+        transition: transform 0.3s;
     }
-
-    .photo-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    .photo:hover {
+        transform: scale(1.03);
     }
-
-    .photo-img {
+    .photo img {
         width: 100%;
         height: 200px;
         object-fit: cover;
+        display: block;
     }
-
-    .photo-info {
-        padding: 15px;
-        text-align: center;
+    @media (max-width: 768px) {
+        .gallery {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
-
-    .photo-title {
-        margin: 0;
-        font-size: 1.1em;
-        color: #333;
-    }
-
-    @media (max-width: 600px) {
-        .gallery-container {
+    @media (max-width: 480px) {
+        .gallery {
             grid-template-columns: 1fr;
         }
     }
 </style>
 
-<h1 style="text-align: center;">实验室精彩瞬间</h1>
-
-<div class="gallery-container" id="gallery"></div>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const images = [
-            { src: "/images/ZhangLab-Photo/于雪新.jpg"},
-            { src: "/images/ZhangLab-Photo/张洪溢.jpg"},
-            { src: "/images/ZhangLab-Photo/陈泓羽.jpg"},
-            { src: "/images/ZhangLab-Photo/彭癸森.jpg"},
-            { src: "/images/ZhangLab-Photo/宋杨.jpg"},
-            { src: "/images/ZhangLab-Photo/魏甜甜.jpg"},
-            { src: "/images/ZhangLab-Photo/许远东.jpg"}
-        ];
-
-        const gallery = document.getElementById('gallery');
-
-        images.forEach(image => {
-            const card = document.createElement('div');
-            card.className = 'photo-card';
-            card.innerHTML = `
-                <img src="${image.src}" alt="${image.title}" class="photo-img" loading="lazy">
-                <div class="photo-info">
-                    <h3 class="photo-title">${image.title}</h3>
-                </div>
-            `;
-            gallery.appendChild(card);
-        });
-    });
-</script>
+<div class="gallery">
+    <div class="photo">
+        <img src="/images/ZhangLab-Photo/于雪新.jpg" loading="lazy">
+    </div>
+    <div class="photo">
+        <img src="/images/ZhangLab-Photo/张洪溢.jpg" loading="lazy">
+    </div>
+    <div class="photo">
+        <img src="/images/ZhangLab-Photo/陈泓羽.jpg" loading="lazy">
+    </div>
+    <div class="photo">
+        <img src="/images/ZhangLab-Photo/彭癸森.jpg" loading="lazy">
+    </div>
+    <div class="photo">
+        <img src="/images/ZhangLab-Photo/宋杨.jpg" loading="lazy">
+    </div>
+    <div class="photo">
+        <img src="/images/ZhangLab-Photo/魏甜甜.jpg" loading="lazy">
+    </div>
+    <div class="photo">
+        <img src="/images/ZhangLab-Photo/许远东.jpg" loading="lazy">
+    </div>
+</div>
