@@ -1,14 +1,96 @@
 ---
 layout: archive
-title: "Portfolio"
+title: "研究成果"
 permalink: /portfolio/
 author_profile: true
 ---
 
-{% include base_path %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        .pub-item {
+            margin-bottom: 15px;
+        }
+        .authors {
+            font-style: italic;
+        }
+        .journal {
+            font-weight: bold;
+        }
+        .year {
+            color: #555;
+        }
+        .co-first {
+            color: #2c7bb6;
+        }
+        .co-senior {
+            color: #d7191c;
+        }
+    </style>
+</head>
+<body>
+    <p>*: Co-first author<br>
+    §: Co-senior author</p>
+
+    <div class="pub-item">
+        <div class="authors">Xuexin Yu<span class="co-first">*</span>, Jing Hu<span class="co-first">*</span>, Yuhao Tan, Mingyao Pan, Hongyi Zhang<span class="co-senior">§</span>, Bo Li<span class="co-senior">§</span>.</div>
+        <div class="title"><a href="../_pdf/8.pdf" target="_blank">MitoTracer facilitates the identification of informative mitochondrial mutations for precise lineage reconstruction</a>.</div>
+        <div class="journal_year">PLoS Computational Biology, 2025</div>.
+    </div>
+
+    <div class="pub-item">
+        <div class="authors">Xuexin Yu, Mingyao Pan, Jianfeng Ye, Cassandra A. Hathaway, Shelley S. Tworoger, Jayanthi Lea<span class="co-senior">§</span>.</div>
+        <div class="title"><a href="../_pdf/7.pdf" target="_blank">Quantifiable TCR repertoire changes in prediagnostic blood specimens among patients with high-grade ovarian cancer</a>.</div>
+        <div class="journal_year">Cell Reports Medicine, 2024</div>.
+    </div>
+
+    <div class="pub-item">
+        <div class="authors">Hongyi Zhang, Bo Li.</div>
+        <div class="title"><a href="../_pdf/6.pdf" target="_blank">A novel computational tool for tracking cancer energy hijacking from immune cells</a>.</div>
+        <div class="journal_year">Clinical and Translational Medicine, 2024</div>.
+    </div>
+
+    <div class="pub-item">
+        <div class="authors">Hongyi Zhang<span class="co-first">*</span>, Xuexin Yu<span class="co-first">*</span>, Jianfeng Ye<span class="co-first">*</span>, Huiyu Li, Jing Hu, Yuhao Tan, Yan Fang, Esra Akbay, Fulong Yu, Chen Weng, Vijay G. Sankaran, Robert M. Bachoo, Elizabeth Maher, John Minna, Anli Zhang<span class="co-senior">§</span>, Bo Li<span class="co-senior">§</span>.</div>
+        <div class="title"><a href="../_pdf/5.pdf" target="_blank">Systematic investigation of mitochondrial transfer between cancer cells and T cells at single-cell resolution</a>.</div>
+        <div class="journal_year">Cancer Cell, 2023</div>.
+    </div>
+
+    <div class="pub-item">
+        <div class="authors">Xuexin Yu<span class="co-first">*</span>, Wanrun Lin<span class="co-first">*</span>, Alexandra Spirtos<span class="co-first">*</span>, Yan Wang, Hao Chen, Jianfeng Ye, Jessica Parker, Ci Ci Liu, Yiying Wang, Gabriella Quinn, Feng Zhou, Setsuko K. Chambers, Cheryl Lewis, Jayanthi Lea<span class="co-senior">§</span>, Bo Li<span class="co-senior">§</span>, Wenxin Zheng<span class="co-senior">§</span>.</div>
+        <div class="title"><a href="../_pdf/4.pdf" target="_blank">Dissection of transcriptome dysregulation and immune characterization in women with germline BRCA1 mutation at single-cell resolution</a>.</div>
+        <div class="journal_year">BMC Medicine, 2022</div>.
+    </div>
+
+    <div class="pub-item">
+        <div class="authors">Xuexin Yu, Bo Li.</div>
+        <div class="title"><a href="../_pdf/3.pdf" target="_blank">Seed or soil: Tracing the immune subsets in metastatic tumors</a>.</div>
+        <div class="journal_year">Cancer Cell, 2022</div>.
+    </div>
+
+    <div class="pub-item">
+        <div class="authors">Hongyi Zhang, Xiaowei Zhan, Bo Li.</div>
+        <div class="title"><a href="../_pdf/2.pdf" target="_blank">GIANA allows computationally-efficient TCR clustering and multi-disease repertoire classification by isometric transformation</a>.</div>
+        <div class="journal_year">Nature Communications, 2021</div>.
+    </div>
+
+    <div class="pub-item">
+        <div class="authors">Hongyi Zhang<span class="co-first">*</span>, Longchao Liu<span class="co-first">*</span>, Jian Zhang, Jiahui Chen, Jianfeng Ye, Sachet Shukla, Jian Qiao, Xiaowei Zhan, Hao Chen, Catherine J Wu, Yang-Xin Fu<span class="co-senior">§</span>, Bo Li<span class="co-senior">§</span>.</div>
+        <div class="title"><a href="../_pdf/1.pdf" target="_blank">Investigation of Antigen-Specific T-Cell Receptor Clusters in Human Cancers</a>.</div>
+        <div class="journal_year">Clinical Cancer Research, 2020</div>.
+    </div>
+</body>
+</html>
 
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
 
