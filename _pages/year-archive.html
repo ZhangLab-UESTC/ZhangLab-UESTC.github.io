@@ -6,58 +6,50 @@ author_profile: true
 ---
 
 <style>
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 15px;
+    .masonry-gallery {
+        column-count: 3;
+        column-gap: 15px;
         padding: 20px;
     }
-    .photo {
+
+    .masonry-photo {
+        margin-bottom: 15px;
+        break-inside: avoid;
+        transition: transform 0.3s;
         border-radius: 8px;
         overflow: hidden;
-        transition: transform 0.3s;
     }
-    .photo:hover {
-        transform: scale(1.03);
+
+    .masonry-photo:hover {
+        transform: scale(1.05);
     }
-    .photo img {
+
+    .masonry-photo img {
         width: 100%;
-        height: 200px;
-        object-fit: cover;
+        height: auto;
         display: block;
+        border-radius: 8px;
     }
-    @media (max-width: 768px) {
-        .gallery {
-            grid-template-columns: repeat(2, 1fr);
+
+    @media (max-width: 992px) {
+        .masonry-gallery {
+            column-count: 2;
         }
     }
-    @media (max-width: 480px) {
-        .gallery {
-            grid-template-columns: 1fr;
+
+    @media (max-width: 600px) {
+        .masonry-gallery {
+            column-count: 1;
         }
     }
 </style>
 
-<div class="gallery">
-    <div class="photo">
-        <img src="/images/ZhangLab-Photo/于雪新.jpg" loading="lazy">
-    </div>
-    <div class="photo">
-        <img src="/images/ZhangLab-Photo/张洪溢.jpg" loading="lazy">
-    </div>
-    <div class="photo">
-        <img src="/images/ZhangLab-Photo/陈泓羽.jpg" loading="lazy">
-    </div>
-    <div class="photo">
-        <img src="/images/ZhangLab-Photo/彭癸森.jpg" loading="lazy">
-    </div>
-    <div class="photo">
-        <img src="/images/ZhangLab-Photo/宋杨.jpg" loading="lazy">
-    </div>
-    <div class="photo">
-        <img src="/images/ZhangLab-Photo/魏甜甜.jpg" loading="lazy">
-    </div>
-    <div class="photo">
-        <img src="/images/ZhangLab-Photo/许远东.jpg" loading="lazy">
-    </div>
+<div class="masonry-gallery">
+    <div class="masonry-photo"><img src="/images/ZhangLab-Photo/于雪新.jpg" loading="lazy"></div>
+    <div class="masonry-photo"><img src="/images/ZhangLab-Photo/张洪溢.jpg" loading="lazy"></div>
+    <div class="masonry-photo"><img src="/images/ZhangLab-Photo/陈泓羽.jpg" loading="lazy"></div>
+    <div class="masonry-photo"><img src="/images/ZhangLab-Photo/彭癸森.jpg" loading="lazy"></div>
+    <div class="masonry-photo"><img src="/images/ZhangLab-Photo/宋杨.jpg" loading="lazy"></div>
+    <div class="masonry-photo"><img src="/images/ZhangLab-Photo/魏甜甜.jpg" loading="lazy"></div>
+    <div class="masonry-photo"><img src="/images/ZhangLab-Photo/许远东.jpg" loading="lazy"></div>
 </div>
